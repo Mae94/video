@@ -1,0 +1,90 @@
+body{
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height:100vh;
+    color: #ffffff;
+
+}
+
+.container-box{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-size: 24px;
+}
+
+video{
+    width: 100%;
+    height:100%;
+    margin: 0;
+}
+
+.grid1 {
+    position: relative;
+    width: auto;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+
+    display: grid;
+    grid-template: 
+     
+    "h1" 20%
+    "form"50%
+    "back"10%
+    /50%
+  
+  }
+  
+  .grid1 h1{
+    text-align: center;
+    font-size: 6rem;
+    font-family: "Cookie";
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+    opacity: 0.50;
+    color: darkgrey;
+    grid-area: h1;
+  }
+
+  form{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Cookie";
+    z-index: 1;
+    opacity: 0.80;
+    color: darkgrey;
+    grid-area: form;
+  }
+  
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.95;
+  }
+
+  a{
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Cookie";
+    z-index: 1;
+    opacity: 0.80;
+    color: darkgrey;
+  }

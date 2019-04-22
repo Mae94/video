@@ -1,0 +1,99 @@
+
+.grid{
+  position: relative;
+  width: 100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  background-color: black;
+  margin: 0;
+  padding: 0%;
+}
+.grid-1 a {
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Cookie";
+    z-index: 1;
+    opacity: 0.50;
+    color: white;
+  }
+  .grid a :hover{
+      background-color: white;
+  }
+  
+.grid-1{
+    z-index:3 ;
+    margin-left: 20px;
+    display: grid;
+    grid-template: 
+    "right-head center-head left-head" 15%
+    /1fr 1fr 1fr;
+}
+.right-head{
+    grid-area: right-head;
+}
+
+.center-head{
+    grid-area: center-head;
+}
+
+.left-head{
+    grid-area: left-head;
+}
+
+
+.grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: 
+    "header header"15%
+    "aside main"1fr
+    "footer footer"10%
+    /20% 1fr;
+    position: absolute;
+    z-index:1;
+    font-size: 6rem;
+    font-family: "Cookie";
+    opacity: 1;
+    color: darkgrey;
+}
+header{
+    grid-area: header;
+    z-index:1;
+      }
+      
+      .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      
+      
+      video {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      };
+
+    
+aside{
+    grid-area: aside;
+    z-index: 1;
+}
+
+aside pre{
+    font-size: 30px;
+}
+main{
+    grid-area: main;
+
+}
+footer{
+    grid-area: footer;
+}
+
